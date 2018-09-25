@@ -1,0 +1,51 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>GroovSense</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p>The Current sources for music are:</p>
+    
+    <ion-list>
+
+  <ion-item>
+    <ion-label>Google Play</ion-label>
+    <ion-checkbox [(ngModel)]="GooglePlay"></ion-checkbox>
+  </ion-item>
+        
+        <ion-item>
+    <ion-label>iTune</ion-label>
+    <ion-checkbox [(ngModel)]="itune"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Spotify</ion-label>
+    <ion-checkbox [(ngModel)]="spotify"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Deezer</ion-label>
+    <ion-checkbox [(ngModel)]="Deezer"></ion-checkbox>
+  </ion-item>
+        
+    <ion-item>
+    <ion-label>Amazon Music</ion-label>
+    <ion-checkbox [(ngModel)]="Amazon "></ion-checkbox>
+  </ion-item>
+        <p><b>you can upgrade to use GroovSense's global record Collection:</b></p>
+        
+    </ion-list>
+    <ion-item>
+    <button ion-button round style="background: orange">Upgrade</button>
+  </ion-item>
+    <br>
+    
+    <ion-item>
+    <button ion-button round (click)="deck()">GroovOn</button>
+  </ion-item>
+    
+</ion-content>

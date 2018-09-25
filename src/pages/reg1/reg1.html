@@ -1,0 +1,83 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>GroovSense</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    
+    <h2>GroovSense needs to know:</h2>
+        <p>WHERE you are, so we can mix you and your friends into the same DJ set location. Are you ok with this?</p>
+    
+    <ion-list>
+
+  <ion-item>
+    <ion-label>Ok</ion-label>
+    <ion-checkbox [(ngModel)]="okay"></ion-checkbox>
+    
+  </ion-item>
+</ion-list>
+    
+    <p>WHAT music you like, so are you ok for us to access this information from :</p>
+    <ion-list>
+
+  <ion-item>
+    <ion-label>Google Play</ion-label>
+    <ion-checkbox [(ngModel)]="GooglePlay"></ion-checkbox>
+  </ion-item>
+        
+        <ion-item>
+    <ion-label>iTune</ion-label>
+    <ion-checkbox [(ngModel)]="itune"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Spotify</ion-label>
+    <ion-checkbox [(ngModel)]="spotify"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Deezer</ion-label>
+    <ion-checkbox [(ngModel)]="Deezer"></ion-checkbox>
+  </ion-item>
+        
+    <ion-item>
+    <ion-label>Amazone</ion-label>
+    <ion-checkbox [(ngModel)]="amazone"></ion-checkbox>
+  </ion-item>
+        
+         <ion-item>
+    <ion-label>Manual Entry</ion-label>
+    <ion-checkbox [(ngModel)]="manualEntry" (click)="showCheckbox()"></ion-checkbox>
+  </ion-item>
+
+</ion-list>
+    
+    
+  
+  
+<p>WHO you want to DJ with:</p>
+    
+    <ion-list>
+  <ion-item>
+    <ion-label>All GroovSense Members</ion-label>
+    <ion-checkbox [(ngModel)]="all"></ion-checkbox>
+  </ion-item>
+        
+        <ion-item>
+    <ion-label>My Mobile Contact Only</ion-label>
+    <ion-checkbox [(ngModel)]="contact"></ion-checkbox>
+  </ion-item>
+        
+        <ion-item>
+    <button ion-button round (click)="nextReg()">GroovOn</button>
+  </ion-item>
+
+
+</ion-list>
+         
+</ion-content>

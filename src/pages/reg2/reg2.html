@@ -1,0 +1,51 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>GroovSense</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    
+    <h2>GroovSense need to confirm :</h2>
+        
+    <ion-list>
+
+  <ion-item>
+    <ion-label>NOTIFICATIONS can be sent to you e.g. When there is a DJ set nearby you can join.
+        Are you ok with this</ion-label>
+    <ion-checkbox [(ngModel)]="okay"></ion-checkbox>
+  </ion-item>
+    
+ <ion-item>
+      <ion-label>MARKETING emails can be sent to you</ion-label>
+    <ion-checkbox [(ngModel)]="marketing"></ion-checkbox>
+</ion-item>        
+    
+    
+
+  <ion-item>
+   <ion-label>AUTOMATICALLY log you in and join you into a DJ sessions<br>
+         Are you ok with this</ion-label>
+      <ion-checkbox [(ngModel)]="login"></ion-checkbox>
+  </ion-item>
+        
+ <ion-item>
+    <ion-label>Data protection updates and approval can be emailed to you <br>
+       Are you ok with this</ion-label>
+    <ion-checkbox [(ngModel)]="data"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button round (click)="login()">GroovOn</button>
+  </ion-item>
+
+
+</ion-list>
+    
+    
+  
+         
+</ion-content>

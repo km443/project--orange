@@ -1,0 +1,72 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>GroovSense</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+<ion-list>
+  <ion-item>
+    <ion-label>Dj Style</ion-label>
+    <ion-select [(ngModel)]="djStyle" multiple="true" cancelText="Nah" okText="Okay!">
+      <ion-option value="traditional" selected="true">Traditinal</ion-option>
+      <ion-option value="Hip Hop">Hip Hop</ion-option>
+      <ion-option value="House" selected="true">House</ion-option>
+      <ion-option value="Fadding">Fadding</ion-option>
+      <ion-option value="Jazz">Jazz</ion-option>
+      <ion-option value="Old rock">old rock</ion-option>
+      
+    </ion-select>
+  </ion-item>
+</ion-list>
+    
+    
+    <ion-list>
+  <ion-item>
+    <ion-label>Event type</ion-label>
+    <ion-select [(ngModel)]="eventtype">
+      <ion-option value="dance party">Dance party</ion-option>
+      <ion-option value="house party">House party</ion-option>
+      <ion-option value="Chilled">Chilled</ion-option>
+      <ion-option value="jazz party">jazz party</ion-option>
+      
+    </ion-select>
+  </ion-item>
+</ion-list>
+    
+    <ion-list>
+  <ion-item>
+    <ion-label>Music Choice</ion-label>
+    <ion-select [(ngModel)]="MusicChoice">
+      <ion-option value="House">House</ion-option>
+      <ion-option value="Hiphop">Hiphop</ion-option>
+      <ion-option value="ps">PlayStation</ion-option>
+      <ion-option value="genesis">Sega Genesis</ion-option>
+      <ion-option value="saturn">Sega Saturn</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+    <ion-list>
+  <ion-item>
+    <ion-label>Duration</ion-label>
+    <ion-select [(ngModel)]="Duration">
+      <ion-option value="1">1 Hour</ion-option>
+      <ion-option value="2">2 Hour</ion-option>
+      <ion-option value="4">4 Hour</ion-option>
+      <ion-option value="8">8 Hour</ion-option>
+      
+      
+    </ion-select>
+  </ion-item>
+</ion-list>
+    
+    <ion-item>
+    <button ion-button round (click)="groovers()" >GroovOn</button>
+  </ion-item>
+</ion-content>
